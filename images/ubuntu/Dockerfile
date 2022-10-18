@@ -20,6 +20,9 @@ RUN apt-get update --quiet --option Dir::Etc::SourceParts="" && \
       curl \
       wget \
       cargo \
+      git \
+      vim \
+      nano \
       locales && \
     # Delete package cache to avoid consuming space in layer
     apt-get clean && \
