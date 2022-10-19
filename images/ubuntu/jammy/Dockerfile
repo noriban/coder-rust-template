@@ -25,8 +25,13 @@ RUN apt-get update --quiet --option Dir::Etc::SourceParts="" && \
       nano \
       locales && \
     # Delete package cache to avoid consuming space in layer
+    curl -fsSL https://code-server.dev/install.sh | sh && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
+
+# Start code-server
+RUN code-server --auth none --port 13337 && \
+    service docker start
 
 # Add a user `coder` so that you're not developing as the `root` user
 RUN useradd coder \

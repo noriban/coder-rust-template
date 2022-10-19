@@ -16,7 +16,7 @@ variable "dotfiles_uri" {
 ##### Variables - END
 
 ##### code-server
-# Things required to include code-server in the Workspace.
+# Get dotfiles
 resource "coder_agent" "main" {
   arch           = "amd64"
   os             = "linux"
