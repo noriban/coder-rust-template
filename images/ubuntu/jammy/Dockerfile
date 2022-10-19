@@ -19,7 +19,6 @@ RUN apt-get update --quiet --option Dir::Etc::SourceParts="" && \
       ca-certificates \
       curl \
       wget \
-      sudo \
       cargo \
       git \
       vim \
@@ -34,7 +33,6 @@ RUN useradd coder \
       --create-home \
       --shell=/bin/bash \
       --uid=1000 \
-      --user-group \
-      --groups=sudo
+      --user-group
 
 USER 1000
