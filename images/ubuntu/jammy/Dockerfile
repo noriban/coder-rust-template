@@ -28,9 +28,6 @@ RUN apt-get update --quiet --option Dir::Etc::SourceParts="" && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Add the sudo group
-RUN groupadd sudo
-
 # Add a user `coder` so that you're not developing as the `root` user
 RUN useradd coder \
       --create-home \
