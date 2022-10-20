@@ -23,10 +23,8 @@ resource "coder_agent" "main" {
   startup_script = <<EOF
     #!/bin/sh
     set -x
-    # install and start code-server
-    curl -fsSL https://code-server.dev/install.sh | sh
-    code-server --auth none --port 13337 &
-    sudo service docker start
+    # Start code-server
+    code-server --auth none --port 13337
     coder dotfiles -y ${var.dotfiles_uri}
     EOF
 }

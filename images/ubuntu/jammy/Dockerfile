@@ -29,10 +29,6 @@ RUN apt-get update --quiet --option Dir::Etc::SourceParts="" && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Start code-server
-RUN code-server --auth none --port 13337 && \
-    service docker start
-
 # Add a user `coder` so that you're not developing as the `root` user
 RUN useradd coder \
       --create-home \
