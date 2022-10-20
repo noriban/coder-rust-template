@@ -20,6 +20,7 @@ RUN apt-get update --quiet --option Dir::Etc::SourceParts="" && \
       curl \
       wget \
       cargo \
+      make \
       git \
       vim \
       nano \
