@@ -1,5 +1,5 @@
 # Ubuntu 18.04 LTS (Bionic Beaver)
-FROM docker.io/library/ubuntu:focal
+FROM docker.io/library/ubuntu:bionic
 
 SHELL ["/bin/bash", "-c"]
 
