@@ -18,7 +18,7 @@ RUN apk add --quiet --no-cache \
       git \
       vim \
       nano \
-      locales && \
+      musl-locales && \
     curl -fsSL https://code-server.dev/install.sh | sh && \
     # Delete package cache to avoid consuming space in layer
     apk cache clean
