@@ -15,6 +15,7 @@ RUN apk add --quiet --no-cache \
       nodejs \
       npm \
       make \
+      g++ \
       git \
       vim \
       nano \
