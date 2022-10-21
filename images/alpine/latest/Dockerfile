@@ -5,7 +5,7 @@ SHELL ["/bin/ash", "-c"]
 
 USER 0
 
-RUN apk add --quiet --no-cache \
+RUN apk add --quiet \
       bash \
       ca-certificates \
       curl \
