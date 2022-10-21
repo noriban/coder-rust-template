@@ -26,6 +26,7 @@ RUN apk add --quiet --no-cache \
 RUN adduser coder \
       -h /home/coder \
       -s /bin/bash \
-      -u 1000
+      -u 1000 \
+      -D
 
 USER 1000
