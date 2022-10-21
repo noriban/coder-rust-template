@@ -20,9 +20,7 @@ RUN apk add --quiet --no-cache \
       vim \
       nano \
       musl-locales && \
-    curl -fsSL https://code-server.dev/install.sh | sh && \
-    # Delete package cache to avoid consuming space in layer
-    apk cache clean
+    curl -fsSL https://code-server.dev/install.sh | sh
 
 # Add a user `coder` so that you're not developing as the `root` user
 RUN adduser coder \
