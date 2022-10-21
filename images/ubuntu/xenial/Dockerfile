@@ -1,5 +1,5 @@
 # Ubuntu 16.04 LTS (Xenial Xerus)
-FROM docker.io/library/ubuntu:bionic
+FROM docker.io/library/ubuntu:xenial
 
 SHELL ["/bin/bash", "-c"]
 
