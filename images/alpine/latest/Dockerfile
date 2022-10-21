@@ -20,7 +20,7 @@ RUN apk add --quiet --no-cache \
       vim \
       nano \
       musl-locales && \
-    npm install -g minimist yazl && \
+    npm install -g minimist yazl yauzl && \
     curl -fsSL https://code-server.dev/install.sh | sh
 
 # Add a user `coder` so that you're not developing as the `root` user
