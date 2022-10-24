@@ -1,5 +1,5 @@
-# Ubuntu 22.04 LTS (Jammy Jellyfish)
-FROM docker.io/library/ubuntu:jammy
+# Arch Linux (Rolling)
+FROM docker.io/library/archlinux:latest
 
 SHELL ["/bin/bash", "-c"]
 
