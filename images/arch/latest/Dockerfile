@@ -19,8 +19,6 @@ RUN pacman -Syyu --noconfirm --quiet \
       git \
       vim \
       nano && \
-    # Install code-server
-    npm install -g code-server --unsafe-perm && \
     # Delete package cache to avoid consuming space in layer
     pacman -Scc
 
