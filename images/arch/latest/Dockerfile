@@ -5,9 +5,6 @@ SHELL ["/bin/bash", "-c"]
 
 USER 0
 
-# Copy configuration files to appropriate locations
-COPY files /
-
 # Install needed packages
 RUN pacman -Syyu --noconfirm \
       bash \
