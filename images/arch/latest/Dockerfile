@@ -20,7 +20,7 @@ RUN pacman -Syyu --noconfirm \
       vim \
       nano && \
     # Install code-server
-    npm install -g code-server --unsafe-perm
+    npm install -g code-server --unsafe-perm && \
     # Delete package cache to avoid consuming space in layer
     pacman -Scc
 
