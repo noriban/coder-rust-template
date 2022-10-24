@@ -6,7 +6,7 @@ SHELL ["/bin/bash", "-c"]
 USER 0
 
 # Install needed packages
-RUN pacman -Syyu --noconfirm \
+RUN pacman -Syyu --noconfirm --quiet \
       bash \
       ca-certificates \
       curl \
