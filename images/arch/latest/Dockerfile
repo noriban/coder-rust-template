@@ -33,5 +33,6 @@ USER 1000
 
 # Now install code-server
 RUN wget https://code-server.dev/install.sh -P /home/coder/ && \
-    chmod +x /home/coder/install.sh --method standalone && \
+    chmod +x /home/coder/install.sh && \
+    /home/coder/install.sh --method standalone && \
     rm /home/coder/install.sh
