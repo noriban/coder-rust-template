@@ -24,7 +24,7 @@ resource "coder_agent" "main" {
     #!/bin/sh
     set -x
     # Start code-server
-    /home/coder/.local/bin/code-server --auth none --port 13337
+    code-server --auth none --port 13337
     coder dotfiles -y ${var.dotfiles_uri}
     EOF
 }
