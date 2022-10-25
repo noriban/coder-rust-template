@@ -32,6 +32,7 @@ RUN useradd coder \
       --create-home \
       --shell=/bin/bash \
       --uid=1000 \
-      --user-group
+      --user-group && \
+    chown -R coder /home/coder
 
 USER 1000
