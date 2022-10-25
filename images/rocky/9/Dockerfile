@@ -19,7 +19,7 @@ RUN yum install -y \
       vim \
       nano && \
     # Delete package cache to avoid consuming space in layer
-    yum clean
+    yum clean all
 
 # Add a user `coder` so that you're not developing as the `root` user
 RUN useradd coder \
