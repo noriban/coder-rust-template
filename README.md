@@ -17,3 +17,12 @@ Decide a Linux "distro" and version to use. Usually the format is `coder-rust-te
 If you are logged into your Coder instance, you can run `coder template create`. It will ask you to confirm, if all went well, you've got the template installed! Go onto your instance's dashboard, and click `Templates`. Open up your new template, and click `Settings`. Configure it as you need.
 
 You should have a template ready to use!
+
+## Contributing
+
+There are multiple ways you can help:
+
+ - The README needs better instructions to be more clear
+ - More distros can be added
+ - GitLab CI/CD needs to be set up
+ - Docker images may need some extra packages
