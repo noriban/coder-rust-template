@@ -1,10 +1,10 @@
 ---
-name: Rust - Rocky Linux 9
+name: Rust - Rocky Linux 8
 description: Develop in your browser with VS Code, Rust, and Rocky Linux
 tags: [local, docker]
 ---
 
-# Rust - Rocky Linux 9
+# Rust - Rocky Linux 8
 
 Develop in your browser with VS Code & the Rust language. Bring your dotfiles with you.
 
