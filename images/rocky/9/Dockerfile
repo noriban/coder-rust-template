@@ -1,4 +1,4 @@
-# Rocky Linux 9 (Stable)
+# Rocky Linux 9 (Blue Onyx)
 FROM docker.io/library/rockylinux:9
 
 SHELL ["/bin/bash", "-c"]
@@ -21,6 +21,12 @@ RUN yum install -y \
     # Delete package cache to avoid consuming space in layer
     yum clean all
 
+# Now install code-server
+RUN wget https://code-server.dev/install.sh -P /home/coder/ && \
+    chmod +x /home/coder/install.sh && \
+    /home/coder/install.sh && \
+    rm /home/coder/install.sh
+
 # Add a user `coder` so that you're not developing as the `root` user
 RUN useradd coder \
       --create-home \
@@ -29,9 +35,3 @@ RUN useradd coder \
       --user-group
 
 USER 1000
-
-# Now install code-server
-RUN wget https://code-server.dev/install.sh -P /home/coder/ && \
-    chmod +x /home/coder/install.sh && \
-    /home/coder/install.sh && \
-    rm /home/coder/install.sh
