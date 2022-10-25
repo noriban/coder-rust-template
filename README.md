@@ -10,7 +10,7 @@ If you are ready to get the templates, this is the easy part. Clone the Git repo
 
 `git clone https://gitlab.com/8Bitz0/coder-rust-template`
 
-Decide a Linux "distro" and version to use. Usually the format is `coder-rust-templates/templates/<distro>/<version>/` Change your working directory to the template you chose.
+Decide a Linux "distro" and version to use. Usually the format is `<distro>/<version>` Change your working directory to the template you chose.
 
 `cd coder-rust-templates/templates/<distro>/<version>/`
 
