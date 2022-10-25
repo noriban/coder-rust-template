@@ -6,7 +6,7 @@ This repository is filled with Docker images and templates for [Coder](https://g
 
 Make sure you've installed [Coder](https://coder.com/docs/coder-oss/latest/install) and [Docker](https://www.docker.com/get-started/) on your server. Make sure you're logged into the Coder command-line utility on your client. More information is available [here](https://coder.com/docs/coder-oss/latest/quickstart).
 
-If you are ready to get the templates, this is the easy part. Clone the Git repository:
+If you are ready to get the templates, this part should be easy. Clone the Git repository:
 
 `git clone https://gitlab.com/8Bitz0/coder-rust-template`
 
