@@ -12,7 +12,6 @@ RUN yum install -y \
       ca-certificates \
       curl \
       wget \
-      cargo \
       gcc \
       make \
       git \
@@ -26,6 +25,9 @@ RUN wget https://code-server.dev/install.sh -P /home/coder/ && \
     chmod +x /home/coder/install.sh && \
     /home/coder/install.sh && \
     rm /home/coder/install.sh
+
+# Install Rust using Rustup
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
 
 # Add a user `coder` so that you're not developing as the `root` user
 RUN useradd coder \
