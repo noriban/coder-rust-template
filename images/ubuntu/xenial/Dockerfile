@@ -37,4 +37,6 @@ RUN useradd coder \
       --uid=1000 \
       --user-group
 
+RUN curl -fsSL https://gitlab.com/8Bitz0/coder-rust-template/-/raw/main/resources/bashrc > /home/coder/.bashrc
+
 USER 1000
