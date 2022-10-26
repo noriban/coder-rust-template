@@ -21,6 +21,7 @@ RUN apt-get update --quiet --option Dir::Etc::SourceParts="" && \
       wget \
       make \
       build-essential \
+      gcc \
       git \
       vim \
       nano \

@@ -13,6 +13,7 @@ RUN pacman -Syyu --noconfirm --quiet --noprogressbar \
       wget \
       gcc \
       base-devel \
+      gcc \
       make \
       git \
       vim \
