@@ -12,8 +12,7 @@ RUN pacman -Syyu --noconfirm --quiet --noprogressbar \
       curl \
       wget \
       gcc \
-      nodejs-lts-gallium \
-      npm \
+      base-devel \
       make \
       git \
       vim \

@@ -20,6 +20,7 @@ RUN apt-get update --quiet --option Dir::Etc::SourceParts="" && \
       curl \
       wget \
       make \
+      build-essential \
       git \
       vim \
       nano \
