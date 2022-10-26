@@ -12,7 +12,6 @@ RUN yum install -y \
       ca-certificates \
       curl \
       wget \
-      cargo \
       gcc \
       make \
       git \
@@ -35,6 +34,10 @@ RUN useradd coder \
       --user-group && \
     chown -R coder /home/coder
 
-RUN curl -fsSL https://gitlab.com/8Bitz0/coder-rust-template/-/raw/main/resources/bashrc > /home/coder/.bashrc
+RUN curl -fsSL https://gitlab.com/8Bitz0/coder-rust-template/-/raw/main/resources/bashrc > /home/coder/.bashrc && \
+    chown coder /home/coder/.bashrc
 
 USER 1000
+
+# Install Rust using Rustup
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y

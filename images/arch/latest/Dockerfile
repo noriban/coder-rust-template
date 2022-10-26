@@ -11,10 +11,9 @@ RUN pacman -Syyu --noconfirm --quiet --noprogressbar \
       ca-certificates \
       curl \
       wget \
-      cargo \
       gcc \
-      nodejs-lts-gallium \
-      npm \
+      base-devel \
+      gcc \
       make \
       git \
       vim \
@@ -29,9 +28,13 @@ RUN useradd coder \
       --uid=1000 \
       --user-group
 
-RUN curl -fsSL https://gitlab.com/8Bitz0/coder-rust-template/-/raw/main/resources/bashrc > /home/coder/.bashrc
+RUN curl -fsSL https://gitlab.com/8Bitz0/coder-rust-template/-/raw/main/resources/bashrc > /home/coder/.bashrc && \
+    chown coder /home/coder/.bashrc
 
 USER 1000
+
+# Install Rust using Rustup
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
 
 # Now install code-server
 RUN wget https://code-server.dev/install.sh -P /home/coder/ && \
