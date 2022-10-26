@@ -12,7 +12,6 @@ RUN yum install -y \
       ca-certificates \
       curl \
       wget \
-      cargo \
       gcc \
       make \
       git \

@@ -19,7 +19,6 @@ RUN apt-get update --quiet --option Dir::Etc::SourceParts="" && \
       ca-certificates \
       curl \
       wget \
-      cargo \
       make \
       git \
       vim \

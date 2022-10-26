@@ -11,7 +11,6 @@ RUN pacman -Syyu --noconfirm --quiet --noprogressbar \
       ca-certificates \
       curl \
       wget \
-      cargo \
       gcc \
       nodejs-lts-gallium \
       npm \
