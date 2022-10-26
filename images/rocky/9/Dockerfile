@@ -26,9 +26,6 @@ RUN wget https://code-server.dev/install.sh -P /home/coder/ && \
     /home/coder/install.sh && \
     rm /home/coder/install.sh
 
-# Install Rust using Rustup
-RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
-
 # Add a user `coder` so that you're not developing as the `root` user
 RUN useradd coder \
       --create-home \
@@ -40,3 +37,6 @@ RUN useradd coder \
 RUN curl -fsSL https://gitlab.com/8Bitz0/coder-rust-template/-/raw/main/resources/bashrc > /home/coder/.bashrc
 
 USER 1000
+
+# Install Rust using Rustup
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
