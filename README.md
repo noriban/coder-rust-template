@@ -18,6 +18,10 @@ If you are logged into your Coder instance, you can run `coder template create`.
 
 You should have a template ready to use!
 
+## Credits
+
+ - [jsjoeio/coder-templates @ GitHub](https://github.com/jsjoeio/coder-templates) - Docker templates that prompt for dotfiles and base Docker image.
+
 ## Contributing
 
 There are multiple ways you can help:
