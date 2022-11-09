@@ -2,6 +2,8 @@
 
 This repository is filled with Docker images and templates for [Coder](https://github.com/coder/coder). All ready for Rust development with [code-server](https://github.com/coder/code-server)
 
+**Looking for more languages? Check out [Coder Universal Template](https://gitlab.com/8Bitz0/coder-universal-template).**
+
 ## Getting Started
 
 Make sure you've installed [Coder](https://coder.com/docs/coder-oss/latest/install) and [Docker](https://www.docker.com/get-started/) on your server. Make sure you're logged into the Coder command-line utility on your client. More information is available [here](https://coder.com/docs/coder-oss/latest/quickstart).
