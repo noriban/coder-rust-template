@@ -28,7 +28,6 @@ You should have a template ready to use!
 
 There are multiple ways you can help:
 
- - The README needs better instructions to be more clear
- - More distros can be added
+ - The README needs some changes to be more clear
  - GitLab CI/CD needs to be set up
- - Docker images may need some extra packages
+ - Docker images may need some extra installed packages
